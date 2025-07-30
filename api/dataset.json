@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Create a regular expression to validate an AWS IAM username, which must start with a letter, can contain letters, numbers, and specific symbols (+=-,.@_), and be between 1-64 characters long",
+    "format": "regex",
+    "solution_criteria": "Correctly matches valid IAM usernames and rejects invalid ones, handles length and character restrictions"
+  },
+  {
+    "task": "Write a Python function that extracts the AWS region from a standard AWS ARN (Amazon Resource Name)",
+    "format": "python",
+    "solution_criteria": "Correctly parses different ARN formats, returns the region component reliably, handles potential edge cases"
+  },
+  {
+    "task": "Create a JSON configuration for an AWS Lambda function's event mapping to a DynamoDB stream with basic settings",
+    "format": "json",
+    "solution_criteria": "Includes required fields for stream configuration, uses correct AWS JSON structure, defines basic event source mapping parameters"
+  }
+]
