@@ -1,0 +1,215 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">9.7 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing scientific research passage with highly technical interdisciplinary terminology from environmental science</td>
+                <td class="prompt-inputs"><strong>content:</strong> Microplastic contamination in marine ecosystems represents a complex transboundary environmental challenge, integrating biogeochemical processes, ecological dynamics, and anthropogenic pollution mechanisms. Recent studies utilizing advanced spectroscopic techniques have revealed intricate interactions between microplastic particles, marine organism metabolic pathways, and sedimentary transport systems, highlighting the profound interconnectedness of oceanic microenvironments and global climate change feedback loops.</td>
+                <td class="criteria">• Correctly identify core interdisciplinary topics<br>• Capture technical terminology as distinct topics<br>• Represent breadth of scientific domains mentioned</td>
+                <td class="output"><pre>{
+    "topics": [
+        "Microplastic contamination",
+        "Marine ecosystems",
+        "Environmental challenges",
+        "Biogeochemical processes",
+        "Ecological dynamics",
+        "Anthropogenic pollution",
+        "Spectroscopic techniques",
+        "Marine organism metabolic pathways",
+        "Sedimentary transport systems",
+        "Oceanic microenvironments",
+        "Global climate change"
+    ]
+}</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts topics from the scholarly text, presenting them as a clean JSON array of strings that capture the breadth of scientific concepts without additional commentary.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing historical research text with complex abstract philosophical themes and academic discourse</td>
+                <td class="prompt-inputs"><strong>content:</strong> Hegel's dialectical methodology represents a profound philosophical approach to understanding historical consciousness, wherein conceptual contradictions emerge and resolve through a dynamic process of thesis, antithesis, and synthesis. By examining the intricate interplay between individual subjective experiences and broader societal structures, philosophical idealism seeks to unravel the complex mechanisms of historical transformation and epistemological development.</td>
+                <td class="criteria">• Correctly identify primary philosophical topics<br>• Capture key conceptual themes in the text<br>• Represent topics as a JSON array of strings</td>
+                <td class="output"><pre>{
+    "topics": [
+        "Hegel's dialectical methodology",
+        "Historical consciousness",
+        "Philosophical idealism",
+        "Thesis, antithesis, and synthesis",
+        "Conceptual contradictions",
+        "Subjective experiences",
+        "Societal structures",
+        "Historical transformation",
+        "Epistemological development"
+    ]
+}</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts philosophical topics from the text, represents them as a clean JSON array of strings, and captures the core conceptual themes without additional commentary. The topics are substantive, relevant, and directly derived from the source text.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing academic article with humanities-based social science topics involving nuanced sociological concepts</td>
+                <td class="prompt-inputs"><strong>content:</strong> Contemporary urban sociology reveals complex intersections between spatial marginalization and social identity formation. Scholars argue that neighborhood segregation is not merely a spatial phenomenon, but a dynamic process of symbolic boundary-making that reproduces systemic inequalities through intricate mechanisms of cultural exclusion and institutional discrimination. These power dynamics manifest through subtle yet persistent social stratification mechanisms that reconstruct marginality across generational and institutional contexts.</td>
+                <td class="criteria">• Correctly identify core sociological topics<br>• Capture nuanced conceptual themes<br>• Represent topics as a valid JSON array of strings</td>
+                <td class="output"><pre>{
+    "topics": [
+        "Urban sociology",
+        "Spatial marginalization",
+        "Social identity formation",
+        "Neighborhood segregation",
+        "Symbolic boundary-making",
+        "Systemic inequalities",
+        "Cultural exclusion",
+        "Institutional discrimination",
+        "Social stratification",
+        "Power dynamics",
+        "Marginality",
+        "Generational context",
+        "Institutional context"
+    ]
+}</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts a comprehensive set of sociological topics from the text, representing them as a valid JSON array of strings. The topics capture the core conceptual themes of spatial marginalization, social identity, and systemic inequalities with nuance and precision.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

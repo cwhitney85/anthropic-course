@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "70",
+      "goal": "muscle maintenance and endurance performance",
+      "restrictions": "vegan, no soy, gluten-free"
+    },
+    "solution_criteria": [
+      "Provides complete protein sources without animal products",
+      "Balances macronutrients for athletic performance",
+      "Meets daily caloric needs for an active athlete",
+      "Adheres to specified dietary restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Plant-based vegan athlete needing complete protein sources and balanced macronutrient distribution"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "muscle maintenance and performance optimization",
+      "restrictions": "budget-conscious, minimal ingredient complexity"
+    },
+    "solution_criteria": [
+      "Total daily calories meet athlete's nutritional requirements",
+      "Meal plan uses cost-effective protein sources",
+      "Provides balanced macronutrient distribution",
+      "Minimizes ingredient diversity while maintaining nutritional quality"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Budget-conscious athlete focusing on cost-effective, performance-optimized meal planning with minimal ingredients"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "Optimize performance during Ironman training with balanced nutrition",
+      "restrictions": "No dairy, gluten-sensitive"
+    },
+    "solution_criteria": [
+      "Provide total daily calorie intake between 3500-4500 calories",
+      "Include balanced macronutrient distribution (50-60% carbohydrates, 20-25% protein, 20-25% healthy fats)",
+      "Account for athlete's dietary restrictions",
+      "Support high-intensity endurance training nutritional needs"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Ultra-endurance athlete (e.g., triathlete) with high-calorie, nutrient-dense requirements during intense training period"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "output": "{\n    \"topics\": [\n        \"Microplastic contamination\",\n        \"Marine ecosystems\",\n        \"Environmental challenges\",\n        \"Biogeochemical processes\",\n        \"Ecological dynamics\",\n        \"Anthropogenic pollution\",\n        \"Spectroscopic techniques\",\n        \"Marine organism metabolic pathways\",\n        \"Sedimentary transport systems\",\n        \"Oceanic microenvironments\",\n        \"Global climate change\"\n    ]\n}",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Microplastic contamination in marine ecosystems represents a complex transboundary environmental challenge, integrating biogeochemical processes, ecological dynamics, and anthropogenic pollution mechanisms. Recent studies utilizing advanced spectroscopic techniques have revealed intricate interactions between microplastic particles, marine organism metabolic pathways, and sedimentary transport systems, highlighting the profound interconnectedness of oceanic microenvironments and global climate change feedback loops."
+      },
+      "solution_criteria": [
+        "Correctly identify core interdisciplinary topics",
+        "Capture technical terminology as distinct topics",
+        "Represent breadth of scientific domains mentioned"
+      ],
+      "task_description": "\n\tExtract topics out of a pasage of text from a scholarly article into a JSON array of strings\n\t",
+      "scenario": "Testing scientific research passage with highly technical interdisciplinary terminology from environmental science"
+    },
+    "score": 10,
+    "reasoning": "The solution fully meets all mandatory and secondary criteria. It successfully extracts topics from the scholarly text, presenting them as a clean JSON array of strings that capture the breadth of scientific concepts without additional commentary."
+  },
+  {
+    "output": "{\n    \"topics\": [\n        \"Hegel's dialectical methodology\",\n        \"Historical consciousness\",\n        \"Philosophical idealism\",\n        \"Thesis, antithesis, and synthesis\",\n        \"Conceptual contradictions\",\n        \"Subjective experiences\",\n        \"Societal structures\",\n        \"Historical transformation\",\n        \"Epistemological development\"\n    ]\n}",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Hegel's dialectical methodology represents a profound philosophical approach to understanding historical consciousness, wherein conceptual contradictions emerge and resolve through a dynamic process of thesis, antithesis, and synthesis. By examining the intricate interplay between individual subjective experiences and broader societal structures, philosophical idealism seeks to unravel the complex mechanisms of historical transformation and epistemological development."
+      },
+      "solution_criteria": [
+        "Correctly identify primary philosophical topics",
+        "Capture key conceptual themes in the text",
+        "Represent topics as a JSON array of strings"
+      ],
+      "task_description": "\n\tExtract topics out of a pasage of text from a scholarly article into a JSON array of strings\n\t",
+      "scenario": "Testing historical research text with complex abstract philosophical themes and academic discourse"
+    },
+    "score": 10,
+    "reasoning": "The solution fully meets all mandatory and secondary criteria. It successfully extracts philosophical topics from the text, represents them as a clean JSON array of strings, and captures the core conceptual themes without additional commentary. The topics are substantive, relevant, and directly derived from the source text."
+  },
+  {
+    "output": "{\n    \"topics\": [\n        \"Urban sociology\",\n        \"Spatial marginalization\",\n        \"Social identity formation\",\n        \"Neighborhood segregation\",\n        \"Symbolic boundary-making\",\n        \"Systemic inequalities\",\n        \"Cultural exclusion\",\n        \"Institutional discrimination\",\n        \"Social stratification\",\n        \"Power dynamics\",\n        \"Marginality\",\n        \"Generational context\",\n        \"Institutional context\"\n    ]\n}",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Contemporary urban sociology reveals complex intersections between spatial marginalization and social identity formation. Scholars argue that neighborhood segregation is not merely a spatial phenomenon, but a dynamic process of symbolic boundary-making that reproduces systemic inequalities through intricate mechanisms of cultural exclusion and institutional discrimination. These power dynamics manifest through subtle yet persistent social stratification mechanisms that reconstruct marginality across generational and institutional contexts."
+      },
+      "solution_criteria": [
+        "Correctly identify core sociological topics",
+        "Capture nuanced conceptual themes",
+        "Represent topics as a valid JSON array of strings"
+      ],
+      "task_description": "\n\tExtract topics out of a pasage of text from a scholarly article into a JSON array of strings\n\t",
+      "scenario": "Testing academic article with humanities-based social science topics involving nuanced sociological concepts"
+    },
+    "score": 9,
+    "reasoning": "The solution fully meets all mandatory and secondary criteria. It successfully extracts a comprehensive set of sociological topics from the text, representing them as a valid JSON array of strings. The topics capture the core conceptual themes of spatial marginalization, social identity, and systemic inequalities with nuance and precision."
+  }
+]
